@@ -7,7 +7,7 @@ module.exports = function AutoGuildquestCLI(mod) {
 		progress = 0,
 		hold = false
 	  
-	mod.game.me.on('change_zone', (zone, quick) => {
+/*	mod.hook('S_LOAD_TOPO', 3, (zone, quick) => {
 		if (mod.settings.battleground.includes(zone)) {
 			hold = true
 		} else if (hold && myQuestId !== 0) {
@@ -15,10 +15,10 @@ module.exports = function AutoGuildquestCLI(mod) {
 			completeQuest()
 			dailycredit()
 		}
-	});
+	}); */
 //Daily NA only
-	mod.hook('S_LOGIN', 'event', () => {
-		mod.hookOnce('S_SPAWN_ME', 'event', () => {
+	mod.hook('S_LOGIN', 14, () => {
+		mod.hookOnce('S_SPAWN_ME', 3, () => {
 			setTimeout(dailycredit,1000+ Math.random()*250);
 		});
 	});
@@ -49,9 +49,10 @@ mod.hook('S_UPDATE_GUILD_QUEST_STATUS', 1, (event) => {
 		//return false;
 	}
 })
+//GquestLog
 
-mod.hook("S_GUILD_QUEST_LIST", 1, (event) => {
-	if (GQuestLog) {
+/* mod.hook("S_GUILD_QUEST_LIST", 1, (event) => {
+	if (mod.settings.GQuestLog) {
 		GetQuestsInfo(event["quests"]);
 	}
 })
@@ -71,14 +72,14 @@ function GetQuestsInfo(questEvent) {
 		if ([1, 2].includes(questEvent[questIndex]["status"])) {
 			let qName = questEvent[questIndex]["name"].replace("@GuildQuest:", "");
 			let qSize = GetQuestSize(questEvent[questIndex]["size"]);
-			let qStatus = `${questEvent[questIndex]["status"] == 1 ? "[ACTIVE]".clr("f1ef48") : "[COMPLETE]".clr("3fce29")}`;
+			let qStatus = `${questEvent[questIndex]["status"] == 1 ? "[ACTIVE]" : "[COMPLETE]"}`;
 			let qTime = new Date(1000 * questEvent[questIndex]["timeRemaining"]).toISOString().substr(11, 8);
-			mod.command.message(`${qStatus} ${Quests[qName].clr("0cccd6")} ${qSize.clr("0c95d4")} Time left: ${qTime.clr("db3dce")}`)
+			log(`${qStatus} ${Quests[qName]} ${qSize} Time left: ${qTime}`)
 		} else {
 			continue
 		}
 	}
-}
+} */
 
 //Vanguard
 	function completeQuest() {
@@ -96,24 +97,23 @@ function GetQuestsInfo(questEvent) {
 			})
 		}, 1000+ Math.random()*250)
 		myQuestId = 0
-		console.log('Vanguard Quest claimed')
+		log('Vanguard Quest claimed')
 	};
 //Daily NA only
 	function dailycredit() {
 		if (mod.settings.Daily) {
 			let _ = mod.trySend('C_REQUEST_RECV_DAILY_TOKEN', 1, {});
-			 !_ ? mod.log('Unmapped protocol packet \<C_REQUEST_RECV_DAILY_TOKEN\>.') : null;
+			 !_ ? log('Unmapped protocol packet \<C_REQUEST_RECV_DAILY_TOKEN\>.') : null;
 		  }
 	};
 //Msg
-function sendMessage(msg) { command.message(msg) }
 function log(msg) { console.log(msg) }
 
 //Command
 command.add('auto', {
 	'VG': () => {
 		mod.settings.Vanguard = !mod.settings.Vanguard
-		log('Auto-Vanguardquest: ' + (mod.settings.Vanguard ? 'On' : 'Off"'));
+		log('Auto-Vanguardquest: ' + (mod.settings.Vanguard ? 'On' : 'Off'));
 	},
 	'GQ': () => {
 		mod.settings.GQuest = !mod.settings.GQuest
