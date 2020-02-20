@@ -1,8 +1,9 @@
 {
     "files": {
-        "index.js": "e00d50fd2060b1eee1bf17a0c65ff88ce6f6a21684ff6878830892c19af48898",
+        "index.js": "c9bb1bc2caf0a3109588917e69e1da54b43fd8754a0f94f289161a97a4868b9e",
         "module.json": "6913f10d04676d4ca90f44bd5066e3622a0e52d81f8ce4887130bcb9a95c68c6",
-        "settings_migrator.js": "a4408a6156908fcf875851d6d063df3cf26bceb68f57390d27691e83c7380015"
+        "settings_migrator.js": "a4408a6156908fcf875851d6d063df3cf26bceb68f57390d27691e83c7380015",
+        "quests.json": "ce99f18eb0a0e6ec450a8b3716a015b8c937e59808f088673d030629751e22c8"
     },
     "defs": {
         "S_FIELD_EVENT_ON_ENTER": 0,

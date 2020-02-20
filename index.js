@@ -1,4 +1,4 @@
-module.exports = function AutoGuildquest(mod) {
+module.exports = function AutoGuildquestCLI(mod) {
 		const {command} = mod.require
 		const Quests = require("./quests.json");
 
