@@ -1,11 +1,16 @@
-Auto-Vanguard / Guild-Quest + Logger / Daily cradit
+Auto-Vanguard / Guild-Quest / Guadian Legion / Daily cradit
+---
+also adds a counter for completed missions as compensation in notice chat<br>
+
 ---
 
 Commands | infos
 --- | ---
 Auto | base command
+CLI | Clientless-Mode
 VQ | for enabled/disabled Auto-Vanguard
-GQ | for enabled/disabled Auto-Guild-Quest with relaunch
-GQLog | for enabled/disabled the GQuest Logged
+GQ | for enabled/disabled Auto-GuildQuest with relaunch
+VGLog | for enabled/disabled VanguardQuest-Logger
+GL | for enabled/disabled Auto claim box in Gardian legion
 DL | for enabled/disabled Auto claim Daily cradit 
 

@@ -1,24 +1,36 @@
 {
-    "files": {
-        "index.js": "3e36f7f1983945c140d56d017bb701f4caec63a6907f5a0a57cb2752f16254b5",
-        "module.json": "6913f10d04676d4ca90f44bd5066e3622a0e52d81f8ce4887130bcb9a95c68c6",
-        "settings_migrator.js": "a4408a6156908fcf875851d6d063df3cf26bceb68f57390d27691e83c7380015",
-        "quests.json": "ce99f18eb0a0e6ec450a8b3716a015b8c937e59808f088673d030629751e22c8"
-    },
-    "defs": {
-        "S_FIELD_EVENT_ON_ENTER": 0,
-        "C_RETURN_TO_LOBBY": 0,
-        "S_COMPLETE_EVENT_MATCHING_QUEST": 1,
-        "S_FIELD_EVENT_PROGRESS_INFO": 1,
-        "S_UPDATE_GUILD_QUEST_STATUS": 1,
-        "C_REQUEST_FINISH_GUILD_QUEST": 1,
-        "C_REQUEST_START_GUILD_QUEST": 1,
-        "S_FIELD_POINT_INFO": 1,
-        "C_COMPLETE_DAILY_EVENT": 1,
-        "C_COMPLETE_EXTRA_EVENT": 1,
-        "C_REQUEST_FIELD_POINT_REWARD": 1,
-        "C_REQUEST_ONGOING_FIELD_EVENT_LIST": 1,
-        "C_REQUEST_RECV_DAILY_TOKEN": 1
-        
-    }
+  "files": {
+    "README.md": "4ae818ea8aaef0b84cf1dcadf1de6fe28da824f8fa49a3cc1de571835611364a",
+    "index.js": "fa60ebf06a4f3f03c3cac2e158d54b78a48f048c1aaef6427f9017515b4c8610",
+    "lib/index.js": "73ab8adbfe9c972902ce96582f667cff12463f76e2066f52d54a61a86d62213a",
+    "module.json": "cc56a53f0c049fe945c10b61c6ef3976e35c9f6572f1836337f6b428a8d1a4b2",
+    "quests.json": "9d2ffed0608f0413c64d93debc04c42af05dd9c2e0447a6c0c25c35173ad5d8d"
+  },
+  "defs": {
+    "C_CHAT": 1,
+    "C_COMPLETE_DAILY_EVENT": 1,
+    "C_COMPLETE_EXTRA_EVENT": 1,
+    "C_GET_GUILD_QUEST_WEEKLY_REWARD": 1,
+    "C_REQUEST_FIELD_POINT_REWARD": 1,
+    "C_REQUEST_FINISH_GUILD_QUEST": 1,
+    "C_REQUEST_GUILD_INFO": 1,
+    "C_REQUEST_ONGOING_FIELD_EVENT_LIST": 1,
+    "C_REQUEST_RECV_DAILY_TOKEN": 1,
+    "C_REQUEST_START_GUILD_QUEST": 1,
+    "C_RETURN_TO_LOBBY": "raw",
+    "S_AVAILABLE_EVENT_MATCHING_LIST": 1,
+    "S_CHAT": 3,
+    "S_COMPLETE_EVENT_MATCHING_QUEST": 1,
+    "S_DUNGEON_EVENT_MESSAGE": 2,
+    "S_FIELD_EVENT_ON_ENTER": "raw",
+    "S_FIELD_EVENT_PROGRESS_INFO": 1,
+    "S_FIELD_POINT_INFO": 2,
+    "S_GUILD_INFO": 1,
+    "S_GUILD_QUEST_LIST": 2,
+    "S_LOAD_TOPO": 3,
+    "S_LOGIN": "raw",
+    "S_NOTIFY_GUILD_QUEST_URGENT": 1,
+    "S_SPAWN_ME": "raw",
+    "S_UPDATE_GUILD_QUEST_STATUS": 1
+  }
 }

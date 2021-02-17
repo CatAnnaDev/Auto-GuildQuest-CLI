@@ -1,15 +1,7 @@
 {
-    "name": "Auto-GuildQuest-CLI",
-    "options": {
-        "niceName": "Auto-GuildQuest-CLI",
-        "guiName": "Auto-GuildQuest-CLI",
-        "settingsFile": "config.json",
-        "settingsMigrator": "settings_migrator.js",
-        "settingsVersion": 1.5
-    },
-    "author": "PsykoDev",
-    "description": "Auto-GuildQuest-CLI",
-    "servers": ["https://raw.githubusercontent.com/PsykoDev/Auto-GuildQuest-CLI/master/"],
-    "supportUrl": "https://github.com/PsykoDev/Auto-GuildQuest-CLI/issues",
-    "version": "90.2"
+    "disableAutoUpdate": true,
+    "name": "Auto-Guildquest",
+    "author": "Psyko | Nekonekoo",
+    "description": "fuck this shit im out",
+    "servers": ["https://raw.githubusercontent.com/neko-org/Auto-Guildquest/master/"]
 }
