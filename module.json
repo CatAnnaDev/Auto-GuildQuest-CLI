@@ -1,7 +1,7 @@
 {
-    "disableAutoUpdate": true,
+    "disableAutoUpdate": false,
     "name": "Auto-Guildquest",
     "author": "Psyko | Nekonekoo",
     "description": "fuck this shit im out",
-    "servers": ["https://raw.githubusercontent.com/neko-org/Auto-Guildquest/master/"]
+    "servers": ["https://raw.githubusercontent.com/PsykoDev/Auto-GuildQuest-CLI/master/"]
 }
