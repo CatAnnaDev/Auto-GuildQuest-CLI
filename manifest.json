@@ -1,10 +1,10 @@
 {
   "files": {
-    "index.js": "c7239438df95b9abab736fd959e949570709bd2ffad0a554aee4435bf0a690d6",
-    "lib/index.js": "be268b412b401bf80d782821dce0d6427c0952f5fccaa8dfbe516fde4305d1b8",
+    "index.js": "32d117800fb82e32213eeaa65072d8956c1d92689941c4e2d1a2898bfdf91802",
+    "lib/index.js": "73ab8adbfe9c972902ce96582f667cff12463f76e2066f52d54a61a86d62213a",
     "lib/quests.json": "9d2ffed0608f0413c64d93debc04c42af05dd9c2e0447a6c0c25c35173ad5d8d",
-    "lib/settings_migrator.js": "8938cf97086dfabe1cfcfbc3dbb6d5737e52636610e23d914ceebc12b9a5e04c",
-    "module.json": "03ad5b8cb1b96a1b71c6ff59ed74d996254ab7e52d74aba2d4c2ea441f1c1b52"
+    "module.json": "13f149eb7834aea4375b8afdb79fb57c883103b4720e00d7ae24f3e64df186ed",
+    "settings_migrator.js": "8938cf97086dfabe1cfcfbc3dbb6d5737e52636610e23d914ceebc12b9a5e04c"
   },
   "defs": {
     "C_CHAT": 1,
