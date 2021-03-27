@@ -1,7 +1,7 @@
 {
   "files": {
     "index.js": "32d117800fb82e32213eeaa65072d8956c1d92689941c4e2d1a2898bfdf91802",
-    "lib/index.js": "73ab8adbfe9c972902ce96582f667cff12463f76e2066f52d54a61a86d62213a",
+    "lib/index.js": "bff6f00e4e413127239c6b79cc23a85603b1e0c8244ed30f2a1d1b7638a62d5a",
     "lib/quests.json": "9d2ffed0608f0413c64d93debc04c42af05dd9c2e0447a6c0c25c35173ad5d8d",
     "module.json": "13f149eb7834aea4375b8afdb79fb57c883103b4720e00d7ae24f3e64df186ed",
     "settings_migrator.js": "8938cf97086dfabe1cfcfbc3dbb6d5737e52636610e23d914ceebc12b9a5e04c"
