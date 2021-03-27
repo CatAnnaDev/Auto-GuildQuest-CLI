@@ -13,4 +13,5 @@ GQ | for enabled/disabled Auto-GuildQuest with relaunch
 VGLog | for enabled/disabled VanguardQuest-Logger
 GL | for enabled/disabled Auto claim box in Gardian legion
 DL | for enabled/disabled Auto claim Daily cradit 
+@quest | anyone can use @quest in guild chat to start guild quest
 
