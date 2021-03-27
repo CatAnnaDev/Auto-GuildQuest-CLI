@@ -3,7 +3,7 @@
 "use strict"
 const fs = require("fs"),
   path = require("path"),
-  Quests = require("./lib/config.jsonquests.json")
+  Quests = require("./lib/quests.json")
 
 const settings = JSON.parse(fs.readFileSync(path.join(__dirname, "./lib/config.json")))
 if (!settings.enabled) return
