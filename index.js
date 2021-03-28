@@ -5,10 +5,11 @@ const fs = require("fs"),
   path = require("path"),
   Quests = require("./lib/quests.json")
 
-const settings = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json")))
-if (!settings.enabled) return
+//const settings = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json")))
+//if (!settings.enabled) return
 
 module.exports = function AutoGuildquest(mod) {
+  const settings = mod.settings
   const Message = require("./lib")
   const MSG = new Message(mod)
   const { command } = mod.require
