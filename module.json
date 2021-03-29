@@ -8,7 +8,7 @@
         "niceName": "Auto-Guildquest",
         "guiName": "Auto-Guildquest",
         "settingsVersion": 103.2,
-        "settingsFile": "config.json",
-        "settingsMigrator": "settings_migrator.js"
+        "settingsFile": "./lib/config.json",
+        "settingsMigrator": "./lib/settings_migrator.js"
     }
 }

@@ -1,18 +1,13 @@
 /** @format */
 
 "use strict"
-const fs = require("fs"),
-  path = require("path"),
-  Quests = require("./lib/quests.json")
-
-//const settings = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json")))
-//if (!settings.enabled) return
 
 module.exports = function AutoGuildquest(mod) {
   const settings = mod.settings
   const Message = require("./lib")
   const MSG = new Message(mod)
   const { command } = mod.require
+  const Quests = require("./lib/quests.json")
 
   mod.game.initialize("inventory")
 
@@ -44,16 +39,16 @@ module.exports = function AutoGuildquest(mod) {
 
   //Hook
   mod.hook("S_LOGIN", "raw", () => {
-    ;(daily = 0), (weekly = 0)
-  })
-  mod.hookOnce("S_AVAILABLE_EVENT_MATCHING_LIST", 1, (event) => {
-    daily = event.unk4weekly = event.unk6
-  })
-  mod.hook("S_LOGIN", "raw", () => {
+    daily = 0
+    weekly = 0
     mod.hookOnce("S_SPAWN_ME", "raw", () => {
       setTimeout(quest, 1000 + Math.random() * 250)
     })
   })
+  mod.hookOnce("S_AVAILABLE_EVENT_MATCHING_LIST", 1, (event) => {
+    daily = event.unk4weekly = event.unk6
+  })
+
   mod.hook("S_FIELD_EVENT_ON_ENTER", "raw", () => {
     entered = true
   })
@@ -214,28 +209,17 @@ module.exports = function AutoGuildquest(mod) {
     let message = rawMessage.replace(/<[^>]*>/g, "").replace(/&.{3}/g, "")
 
     if (event.channel === 2 && message === "@quest") {
-      quest()
+      mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+        questId: 10002,
+      })
+      mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+        questId: 10003,
+      })
       MSG.guildBLUE("Try accept guild quest")
     }
   })
 
-  function quest() {
-    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
-      questId: 10002,
-    })
-
-    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
-      questId: 10003,
-    })
-  }
-
   //Command
-
-  mod.command.add(["gbox", "rewards"], () => {
-    Check = true
-
-    // Request the Guild quests page
-  })
 
   command.add("auto", {
     AC: () => {
