@@ -209,15 +209,20 @@ module.exports = function AutoGuildquest(mod) {
     let message = rawMessage.replace(/<[^>]*>/g, "").replace(/&.{3}/g, "")
 
     if (event.channel === 2 && message === "@quest") {
-      mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
-        questId: 10002,
-      })
-      mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
-        questId: 10003,
-      })
+      quest()
       MSG.guildBLUE("Try accept guild quest")
     }
   })
+
+  function quest() {
+    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+      questId: 10002,
+    })
+
+    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+      questId: 10003,
+    })
+  }
 
   //Command
 
