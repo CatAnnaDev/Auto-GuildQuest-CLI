@@ -41,9 +41,9 @@ module.exports = function AutoGuildquest(mod) {
   mod.hook("S_LOGIN", "raw", () => {
     daily = 0
     weekly = 0
-    mod.hookOnce("S_SPAWN_ME", "raw", () => {
-      setTimeout(quest, 1000 + Math.random() * 250)
-    })
+  })
+  mod.hookOnce("S_SPAWN_ME", "raw", () => {
+    setTimeout(quest, 1000 + Math.random() * 250)
   })
   mod.hookOnce("S_AVAILABLE_EVENT_MATCHING_LIST", 1, (event) => {
     daily = event.unk4weekly = event.unk6
