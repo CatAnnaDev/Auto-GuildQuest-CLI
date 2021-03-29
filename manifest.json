@@ -2,7 +2,6 @@
     "files": {
         "README.md": "7a6d179e1843e6d79b1c770d69acf8143430bbf4cc56326cdbb68246caf20f27",
         "index.js": "a44095a676468ccaa8570f2952d7451b31d4ddc09788a41737ed689f67793565",
-        "lib/config.json": "fbe59bc76d04f8b203ec3eaeb7729c9e52e0518f606135ec91c16647bf8caad4",
         "lib/index.js": "bff6f00e4e413127239c6b79cc23a85603b1e0c8244ed30f2a1d1b7638a62d5a",
         "lib/quests.json": "9d2ffed0608f0413c64d93debc04c42af05dd9c2e0447a6c0c25c35173ad5d8d",
         "lib/settings_migrator.js": "8938cf97086dfabe1cfcfbc3dbb6d5737e52636610e23d914ceebc12b9a5e04c",
