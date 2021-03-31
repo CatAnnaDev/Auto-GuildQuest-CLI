@@ -15,5 +15,5 @@ also adds a counter for completed missions as compensation in notice chat<br>
 | VGLog      | for enabled/disabled VanguardQuest-Logger                                    |
 | GL         | for enabled/disabled Auto claim box in Gardian legion                        |
 | DL         | for enabled/disabled Auto claim Daily cradit                                 |
-| @quest     | anyone can use @quest in guild chat to start guild quest Hunt + monster hunt |
+| @quest     | anyone can use @quest in guild chat to start guild quest Hunt + Boss         |
 | @quest all | active all quest                                                             |
