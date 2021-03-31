@@ -212,6 +212,10 @@ module.exports = function AutoGuildquest(mod) {
       quest()
       MSG.guildBLUE("Try accept guild quest")
     }
+    if (event.channel === 2 && message === "@quest all") {
+      Aquest()
+      MSG.guildBLUE("Try accept all guild quest")
+    }
   })
 
   function quest() {
@@ -221,6 +225,24 @@ module.exports = function AutoGuildquest(mod) {
 
     mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
       questId: 10003,
+    })
+  }
+
+  function Aquest() {
+    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+      questId: 10000,
+    })
+    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+      questId: 10001,
+    })
+    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+      questId: 10002,
+    })
+    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+      questId: 10003,
+    })
+    mod.send("C_REQUEST_START_GUILD_QUEST", 1, {
+      questId: 10004,
     })
   }
 
